@@ -27,7 +27,7 @@ export const MoodPicker: React.FC<MoodPickerProps> = ({ handleSelectMood }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>How are you right now?</Text>
+      <Text style={styles.heading}>how are you right now?</Text>
       <View style={styles.moodList}>
         {moodOptions.map(option => (
           <View key={option.emoji}>
@@ -48,7 +48,7 @@ export const MoodPicker: React.FC<MoodPickerProps> = ({ handleSelectMood }) => {
         ))}
       </View>
       <Pressable style={styles.button} onPress={handleSelect}>
-        <Text style={styles.buttonText}>Choose</Text>
+        <Text style={styles.buttonText}>choose</Text>
       </Pressable>
     </View>
   );

@@ -16,7 +16,7 @@ export const MoodItemRow: React.FC<MoodItemRowProps> = ({ item }) => {
         <Text style={styles.moodDescription}>{item.mood.description}</Text>
       </View>
       <Text style={styles.moodDate}>
-        {format(new Date(item.timestamp), "dd MMM, yyyy 'at' h:mmaaa")}
+        {format(new Date(item.timestamp), "dd MMM, yyyy 'at' h:mm:ssaaa")}
       </Text>
     </View>
   );
